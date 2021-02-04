@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 1em;
+}
+
+.box {
+    border: 1px solid black;
+    background: rgb(177, 175, 175);
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+#chicken {
+    background-color: rgb(216, 118, 134);
+}
+
+#beef {
+    background-color: rgb(202, 35, 35);
+}
+
+#sushi {
+    background-color: rgb(187, 154, 6);
+}
+
+.food {
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding-right: 2em;
+    padding-left: 2em; 
+}
+
+.box p {
+    padding: 2em 1em 1em 1em;
+}
+
+/* Media Queries */
+/* Small Devices */
+@media (max-width: 767px) {
+    #box1, #box2, #box3 {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    #box1, #box2 {
+        width: 50%;
+        float: left;
+    }
+
+    #box1 {
+        padding-left: 1em;
+        padding-right: .5em;
+    }
+
+    #box2 {
+        padding-left: .5em;
+        padding-right: 1em;
+    }
+
+    #box3 {
+        padding-right: 1em;
+        padding-left: 1em;
+        clear: both;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 992px) {
+    #box1, #box2, #box3 {
+        float: left;
+        width: 33.33%;
+    }
+
+    #box1 {
+        padding-left: 1em;
+    }
+
+    #box2 {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    #box3 {
+        padding-right: 1em;
+    }
+}
